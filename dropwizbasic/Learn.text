@@ -1,0 +1,27 @@
+Note that Dropwizard creates a package structure for you that follows their convention:
+
+api
+--> POJOs that define the objects used in your REST resources (also call these objects domain objects or DTOs).
+
+cli
+--> This is where your Dropwizard commands go (additional commands you wish to add to startup of your application).
+
+client
+--> Client helper classes go here.
+
+db
+--> Any DB related code or configuration goes here.
+
+health
+--> Microservice-specific health checking that can be exposed at runtime in the admin interface goes here.
+
+resources
+--> Our REST resource classes go here.
+
+
+
+We also have the files
+--> dropwizbasicApplication.java and
+--> dropwizbasicConfiguration.java,
+which is where our configuration and bootstrapping code goes.
+
